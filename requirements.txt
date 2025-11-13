@@ -6,3 +6,4 @@ pandas
 scipy
 statsmodels
 matplotlib
+semopy
