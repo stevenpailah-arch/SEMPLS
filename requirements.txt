@@ -1,5 +1,7 @@
+streamlit
 numpy
 matplotlib==3.*
 seaborn==0.13.*
 pandas
 scipy
+statsmodels.api
