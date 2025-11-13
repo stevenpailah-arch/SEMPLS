@@ -5,3 +5,4 @@ seaborn==0.13.*
 pandas
 scipy
 statsmodels
+matplotlib
