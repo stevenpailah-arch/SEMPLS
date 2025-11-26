@@ -4,6 +4,20 @@ import numpy as np
 import statsmodels.api as sm
 from io import StringIO
 
+# --- Header Profil ---
+st.markdown("""
+    <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=lpq1xBMAAAAJ&citpid=1"
+             alt="Foto Profil"
+             style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 3px solid #4CAF50;">
+        <div>
+            <h2 style="margin-bottom: 5px;">Fatrisye Pandensolang</h2>
+            <p style="margin: 0; font-size: 18px;">BNN Provinsi Sulawesi Utara</p>
+            <p style="margin: 0; font-size: 18px;">E-mail: <b>fatrisye@gmail.com</b></p>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
 # --- Konfigurasi Dasar ---
 st.set_page_config(
     page_title="Aplikasi Analisis SEM PLS Proxy",
@@ -379,4 +393,5 @@ if uploaded_file is not None:
         st.error(f"Terjadi kesalahan saat memproses file: {e}")
         st.info("Pastikan file CSV menggunakan titik koma (;) sebagai delimiter dan semua kolom indikator terisi dengan angka.")
 else:
+
     st.info("Silakan unggah file CSV Anda untuk memulai analisis.")
